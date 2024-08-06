@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Date</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+        }
+
+        .clock-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .time-display {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .date-display {
+            font-size: 24px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="time-display" id="time"></div>
+        <div class="date-display" id="date"></div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            const dateString = now.toDateString();
+
+            document.getElementById('time').textContent = timeString;
+            document.getElementById('date').textContent = dateString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to set the clock immediately
+    </script>
+</body>
+</html>

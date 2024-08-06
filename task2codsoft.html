@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(181, 59, 181);
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(145, 67, 67);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(154, 127, 127);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .intro {
+            background-color: #e8c6de;
+        }
+
+        .projects {
+            background-color: #f1f4f5;
+        }
+
+        .skills {
+            background-color: #f0e8ee;
+        }
+
+        .education {
+            background-color: #bbc28b;
+        }
+
+        .contact {
+            background-color: #9cb5bd;
+            padding: 20px 0;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 60%;
+            margin: 30px auto;
+            display: block;
+        }
+
+        .project-list {
+            display: block;
+        }
+
+        .project {
+            width: 90%;
+            background-color: #b8b05c;
+            padding: 20px;
+            margin: 10px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 3px solid #221111;
+            text-align: left;
+        }
+
+        th {
+            background-color: #060508;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        ul {
+            list-style: solid disc;
+            list-style-position: inside;
+            padding-left: 10;
+            text-align: left;
+        }
+
+        li {
+            font-weight: bold;
+            padding-left: 400px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .project {
+                width: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="section intro">
+        <img src="C:\Users\SRI\OneDrive\Pictures\IMG_20230501_112029_354.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="container">
+            <h1>Hello, I'm Kasthuri.Nagavardhan</h1>
+            <p>Welcome to my personal portfolio website. I am a Student at CMR Technical Campus</p>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <div class="container">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech</td>
+                        <td>CMR Technical Campus </td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>VidhyaBharathi Junior College</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Vishwasanthi Vidyalayam</td>
+                        <td>2020</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Project 1:IoT-Based Anti Theft Flooring System</h3>
+                    <p>The IoT-Based Anti-Theft Flooring System is a cutting-edge security solution designed to protect valuable assets. It uses embedded smart sensors to detect unusual movements or pressure changes on the floor. When unauthorized access is detected, real-time alerts are sent to the owner's smartphone via a connected mobile app. The system can also trigger alarms and activate cameras to capture evidence. This advanced technology ensures the safety of high-value items in various settings, such as homes, offices, and museums. It provides a seamless and effective security measure through the power of IoT.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2:To-Do List Application</h3>
+                    <p>The To-Do List application is a web-based tool designed to help users manage their tasks efficiently. Users can add new tasks, edit existing ones, and delete completed or unwanted tasks. The application leverages local storage to save tasks, ensuring that the list persists even after the browser is closed. A clean, user-friendly interface makes task management simple and intuitive. The app is built using HTML, CSS, and JavaScript, showcasing responsive design for usability on various devices. This tool is ideal for anyone looking to organize their daily activities effectively.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+   
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
